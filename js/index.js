@@ -21,3 +21,15 @@ button.addEventListener('click', () => {
     pass1.setCustomValidity('');
   }
 });
+
+function setTheme() {
+  const root = document.documentElement;
+  let bg = document.querySelector('.description-area');
+  const newTheme = root.className === 'dark' ? 'light' : 'dark';
+  root.className = newTheme;
+  if (root.className === 'dark') {
+    alert('hi');
+  }
+}
+
+document.querySelector('.theme-toggle').addEventListener('click', setTheme);
