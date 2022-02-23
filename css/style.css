@@ -47,7 +47,7 @@ body {
       rgba(0, 0, 0, 0.568),
       rgba(0, 0, 0, 0.527)
     ),
-    url(../assets/img/person.jpg); /* To specify gradients the bg-img property is used*/
+    url(/assets/img/person.jpg); /* To specify gradients the bg-img property is used*/
   background-size: cover; /* By doing this the whole image will always fit into the container*/
   background-position: top;
   position: relative;
