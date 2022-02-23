@@ -24,14 +24,20 @@ button.addEventListener('click', () => {
 
 function setTheme() {
   const root = document.documentElement;
-  let bg = document.querySelector('.description-area');
+  const bg = document.querySelector('.description-area');
+  let themeBtn = document.querySelector('.theme-toggle');
+
   const newTheme = root.className === 'dark' ? 'light' : 'dark';
   root.className = newTheme;
   if (root.className === 'dark') {
+    bg.setAttribute('style', 'background-image: none');
+    themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+  } else {
     bg.setAttribute(
       'style',
-      'background: url(https://raw.githubusercontent.com/gzveriachvili/sign-up-form/main/assets/img/background_dark.png)'
+      'background-image: url(https://raw.githubusercontent.com/gzveriachvili/sign-up-form/main/assets/img/background.png)'
     );
+    themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
   }
 }
 
