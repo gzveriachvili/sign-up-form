@@ -28,7 +28,10 @@ function setTheme() {
   const newTheme = root.className === 'dark' ? 'light' : 'dark';
   root.className = newTheme;
   if (root.className === 'dark') {
-    alert('hi');
+    bg.setAttribute(
+      'style',
+      'background: url(https://raw.githubusercontent.com/gzveriachvili/sign-up-form/main/assets/img/background_dark.png)'
+    );
   }
 }
 
