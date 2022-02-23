@@ -102,7 +102,7 @@ body {
   font-weight: 600;
   padding: 120px 300px 60px 30px;
   color: rgb(41, 41, 41);
-  background: url(/assets/img/background.png);
+  background: url(https://raw.githubusercontent.com/gzveriachvili/sign-up-form/main/assets/img/background.png);
 }
 
 .description-area p:last-child {
