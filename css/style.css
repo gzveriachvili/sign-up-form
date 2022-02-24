@@ -134,11 +134,14 @@ body {
   font-size: 1.4rem;
   font-weight: 600;
   padding: 120px 300px 60px 30px;
-  color: var(--desc-text);
   background: url('https://raw.githubusercontent.com/gzveriachvili/sign-up-form/main/assets/img/background.png');
 }
 
-.description-area p:last-child {
+.content-section .description-area p:first-child {
+  color: var(--desc-text);
+}
+
+.content-section .description-area p:last-child {
   margin-top: 30px;
   background: var(--desc-highlight-bg);
   color: var(--desc-highlight-text);

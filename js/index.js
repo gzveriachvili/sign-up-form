@@ -27,10 +27,13 @@ function setTheme() {
   const bg = document.querySelector('.description-area');
   let themeBtn = document.querySelector('.theme-toggle');
 
-  const newTheme = root.className === 'dark' ? 'light' : 'dark';
+  const newTheme = root.className === 'light' ? 'dark' : 'light';
   root.className = newTheme;
   if (root.className === 'dark') {
-    bg.setAttribute('style', 'background-image: none');
+    bg.setAttribute(
+      'style',
+      'background-image: url(./assets/img/background_dark.png)'
+    );
     themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
   } else {
     bg.setAttribute(
@@ -41,4 +44,5 @@ function setTheme() {
   }
 }
 
+setTheme();
 document.querySelector('.theme-toggle').addEventListener('click', setTheme);
