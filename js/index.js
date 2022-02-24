@@ -11,7 +11,7 @@ email.addEventListener('input', function (event) {
 const pass1 = document.querySelector('#user_password');
 const pass2 = document.querySelector('#user_password_confirm');
 
-const button = document.querySelector('button');
+const button = document.querySelector('.form-area button');
 
 button.addEventListener('click', () => {
   if (pass1.value !== pass2.value) {
