@@ -32,7 +32,7 @@ function setTheme() {
   if (root.className === 'dark') {
     bg.setAttribute(
       'style',
-      'background-image: url(./assets/img/background_dark.png)'
+      'background-image: url(https://raw.githubusercontent.com/gzveriachvili/sign-up-form/main/assets/img/background_dark.png)'
     );
     themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
   } else {
